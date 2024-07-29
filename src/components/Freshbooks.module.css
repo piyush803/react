@@ -1,0 +1,21 @@
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    color: #007bff;
+}
+
+h2 {
+    color: #555;
+}
+
+pre {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
