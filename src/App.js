@@ -1,64 +1,92 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Freshbooks from './components/Freshbooks';
-import Login from './components/Login';
+import Login from './components/login';
 import Callback from './components/Callback';
 import Session from './components/Session';
 import Layout from './components/Layout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+    return (
         <Router>
             <Layout>
-                <Switch>
-                    <Route path="/login" component={Login} />
+                <Routes>
+                    <Route path="/login/react" component={Login} />
                     <Route path="/callback" component={Callback} />
                     <Route path="/session" component={Session} />
                     <Route path="/" component={Freshbooks} />
-                </Switch>
+                </Routes>
             </Layout>
         </Router>
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    );
 }
 
 export default App;
 
+
+
+
+// import logo from './logo.svg';
+// import './App.css';
 // import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 // import Freshbooks from './components/Freshbooks';
-// import Login from './components/Login';
+// import Login from './components/login';
 // import Callback from './components/Callback';
 // import Session from './components/Session';
 // import Layout from './components/Layout';
 
 // function App() {
-//     return (
-//         <Layout>
-//             <h1>My React App</h1>
-//             <Login />
-//             <Callback />
-//             <Session />
-//             <Freshbooks />
-//         </Layout>
-//     );
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//         <Router>
+//             <Layout>
+//                 <Routes>
+//                     <Route path="/login" component={Login} />
+//                     <Route path="/callback" component={Callback} />
+//                     <Route path="/session" component={Session} />
+//                     <Route path="/" component={Freshbooks} />
+//                 </Routes>
+//             </Layout>
+//         </Router>
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
 // }
 
 // export default App;
+
+// // import React from 'react';
+// // import Freshbooks from './components/Freshbooks';
+// // import Login from './components/Login';
+// // import Callback from './components/Callback';
+// // import Session from './components/Session';
+// // import Layout from './components/Layout';
+
+// // function App() {
+// //     return (
+// //         <Layout>
+// //             <h1>My React App</h1>
+// //             <Login />
+// //             <Callback />
+// //             <Session />
+// //             <Freshbooks />
+// //         </Layout>
+// //     );
+// // }
+
+// // export default App;
 

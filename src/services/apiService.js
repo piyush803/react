@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_BASE_URL = 'http://localhost:8000/freshbooks/'; 
 export const fetchFreshbooks = async () => {
-    return axios.get(API_BASE_URL);
+    return axios.get(`${API_BASE_URL}login/`);
 };
 
 export const loginFreshbooks = async () => {
